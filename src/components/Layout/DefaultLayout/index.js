@@ -1,3 +1,6 @@
+import React from 'react';
+
+
 import Header from "~/components/Layout/components/Header";
 import Sidebar from "./Sidebar";
 import classNames from 'classnames/bind';

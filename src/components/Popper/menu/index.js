@@ -8,7 +8,7 @@ import { Wrapper as PopperWrapper } from '~/components/Popper';
 
 const defaultFn = () => { };
 const cx = classNames.bind(styles);
-function Menu({ children, items = [], onChange = defaultFn }) {
+function Menu({ children, items = [], onChange = defaultFn, hideOnClick = false }) {
     const [history, setHistory] = useState([{ data: items }]);
     const curent = history[history.length - 1];
     const renderItems = () => {
@@ -33,7 +33,9 @@ function Menu({ children, items = [], onChange = defaultFn }) {
     };
     return (
         <Tippy
+
             offset={[12, 8]}
+            hideOnClick={hideOnClick}
             interactive
             placement='bottom-end'
             delay={[0, 500]}
@@ -45,7 +47,7 @@ function Menu({ children, items = [], onChange = defaultFn }) {
                                 onBack={() => setHistory((prev) =>
                                     prev.slice(0, prev.length - 1))} />
                         }
-                        {renderItems()}
+                        <div className={cx('menu-body')}>{renderItems()}</div>
                     </PopperWrapper>
                 </div>
             )}

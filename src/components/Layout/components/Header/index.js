@@ -1,4 +1,4 @@
-
+import routesConfig from "~/config/routes"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
@@ -27,6 +27,7 @@ import Tippy from '@tippyjs/react';
 import { InboxIcon, MessageIcon, UploadIcon } from '~/components/Icons';
 import Image from '~/components/Image';
 import Search from '../Search';
+import { Link } from 'react-router-dom';
 
 
 const MENU_ITEMS = [
@@ -46,6 +47,7 @@ const MENU_ITEMS = [
                     code: 'vi',
                     title: 'Tiếng Việt',
                 },
+
             ],
         }
     },
@@ -103,7 +105,8 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt="Tiktok" />
+                    <Link to={routesConfig.home} className={cx('logo-link')} ><img src={images.logo} alt="Tiktok" />
+                    </Link>
                 </div>
                 <Search />
                 <div className={cx('actions')}>

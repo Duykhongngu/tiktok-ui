@@ -62,6 +62,9 @@ const MENU_ITEMS = [
     },
 ];
 const cx = classNames.bind(styles);
+
+
+//////////////////////////////////////
 function Header() {
 
 
@@ -135,7 +138,7 @@ function Header() {
                         </>
                     ) : (
                         <>  <Button text>Upload</Button>
-                            <Button primary >Log in</Button>
+                            <Button primary  >Log in</Button>
 
                         </>
                     )}

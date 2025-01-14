@@ -3,7 +3,7 @@ import routesConfig from "~/config/routes"
 
 
 //layout
-import { HeaderOnly } from "~/components/Layout"
+import { HeaderOnly } from "~/layouts";
 
 import Home from "~/pages/Home"
 import Following from "~/pages/Following"

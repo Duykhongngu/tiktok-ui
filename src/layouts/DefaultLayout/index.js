@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import Header from "~/components/Layout/components/Header";
+import Header from '../components/Header';
 import Sidebar from "./Sidebar";
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';

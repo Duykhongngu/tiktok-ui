@@ -3,9 +3,8 @@ import styles from "./SuggestedAccounts.module.scss";
 import PropTypes from 'prop-types'
 import AccountItem from "./AccountItem";
 
-
-
 const cx = classNames.bind(styles);
+
 function SuggestedAccounts({ label }) {
     return (
         <div className={cx('wrapper')}>
@@ -13,7 +12,11 @@ function SuggestedAccounts({ label }) {
             <AccountItem />
             <AccountItem />
             <AccountItem />
-
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <AccountItem />
+            <p className={cx('more-btn')}>See all</p>
         </div>
     );
 }

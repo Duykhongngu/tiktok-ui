@@ -1,6 +1,16 @@
+.wrapper {
+    border-top: #e3e3e4 solid 1px;
+}
+.label {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
 .account-item {
     display: flex;
     font-size: 1.4rem;
+    padding: 8px;
+    cursor: pointer;
 }
 .avatar {
     width: 32px;
@@ -15,8 +25,22 @@
 .name {
     font-size: 1.6rem;
     color: #161823;
+    opacity: #161823bf;
+    line-height: 1;
 }
 
 .nickname {
     font-size: 1.2rem;
+}
+.check {
+    font-size: 1.4rem;
+    color: #20d5ec;
+    margin-left: 4px;
+}
+.more-btn {
+    padding: 8px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fe2c55;
+    cursor: pointer;
 }
